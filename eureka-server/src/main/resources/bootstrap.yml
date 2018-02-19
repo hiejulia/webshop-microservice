@@ -8,8 +8,17 @@ server:
 spring:
   application:
     name: eureka-server
-
+  cloud:
+    config:
+      uri: http://${CONFIG-HOST:localhost}:8888
+      fail-fast: true
+      retry:
+        maxInterval: 5000
+        maxAttempts: 9
 
 
 
 #spring.cloud.config.uri=http://localhost:8888/
+
+
+

@@ -1,0 +1,26 @@
+server:
+  port: ${PORT:8080}
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://${DISCOVERY-HOST:localhost}:8761/eureka/
+  instance:
+    preferIpAddress: true
+
+zuul:
+  ignoredServices: '*' # avoid to add microservices automatically (host:port/spring-application-name)
+  routes:
+    products-cmd:
+      path: /products/**
+      serviceId: product-catalog-cmd
+      stripPrefix: false
+    product-categories-cmd:
+      path: /categories/**
+      serviceId: product-catalog-cmd
+      stripPrefix: false
+
+zuulCustomFilters:
+  productCatalogQuery:
+    serviceId: product-catalog-query
+    paths: /products, /categories
