@@ -22,9 +22,8 @@
 
 
 + Database : MySQL, PostgreSQL, MongoDB, Cassandra 
-
-
-
++ Build tool: Maven, Gradle 
++ Testing: JUnit, Mockito, Hamcrest, 
 
 
 ## How to run 
