@@ -14,13 +14,33 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 
+
+
 group = 'project'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
 
+
+
 repositories {
 	mavenCentral()
 }
+
+
+apply plugin: 'docker'
+//
+//task buildDocker(type: Docker, dependsOn: build) {
+//    push = true
+//    applicationName = jar.baseName
+//    dockerfile = file('src/main/docker/Dockerfile')
+//    doFirst {
+//        copy {
+//            from jar
+//            into stageDir
+//        }
+//    }
+//
+//
 
 
 dependencies {

@@ -11,6 +11,9 @@ import javax.persistence.Table;
 @Table(name = "review")
 public class Review {
 
+
+    // REVIEW: productId, rating, customerId
+
     private UUID productId;
     private double rating;
     private UUID customerId;
