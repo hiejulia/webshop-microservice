@@ -1,5 +1,5 @@
 server:
-  port: 8761 # Http tomcat port 
+  port: 8761 # Http tomcat port
 eureka:
   instance:
     hostname: localhost
