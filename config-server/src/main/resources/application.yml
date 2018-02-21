@@ -15,3 +15,13 @@ spring:
           searchLocations: file://${LOCAL_REPO}
         git:
           uri: file://${GIT_LOCAL_REPO}
+          # uri: https://github.com/venkataravuri/config-repo
+
+
+eureka:
+  instance:
+    hostname: config-server
+  client:
+    registryFetchIntervalSeconds: 1
+    serviceUrl:
+      defaultZone: http://discovery-microservice:8001/eureka/      
