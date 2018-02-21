@@ -1,9 +1,9 @@
 server:
-  port: 8761
+  port: 8761 # Http tomcat port 
 eureka:
   instance:
     hostname: localhost
-  client:
+  client: # not a client , do not register with yourself
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
