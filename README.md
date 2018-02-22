@@ -12,16 +12,15 @@
 + Client-side load balancing: Ribbon 
 + Dynamic scaling: Eureka naming server 
 + API gateway Zuul 
-
 + RESTful service 
     + Hateoas
     + Exception handling
     + RESTtemplate
     + Feign client 
     + JPA 
++ Messaging : RabbitMQ
 
-
-+ Database : MySQL, PostgreSQL, MongoDB, Cassandra 
++ Database : MySQL, PostgreSQL, MongoDB, Cassandra
 + Build tool: Maven, Gradle 
 + Testing: JUnit, Mockito, Hamcrest, 
 
