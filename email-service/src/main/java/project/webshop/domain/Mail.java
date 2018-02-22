@@ -32,20 +32,20 @@ public class Mail {
         try {
 
             Message message = new MimeMessage(session);
-            message.setFrom(new InternetAddress("campus.tribune295@gmail.com"));
+            message.setFrom(new InternetAddress("hienminhnguyen711@gmail.com"));
 
             message.setRecipient(Message.RecipientType.TO, new InternetAddress(strRecepientAddress));
             //For login: the Message Subject will be - Verify your email on Campus Tribune
 
-            message.setSubject("Registered on the Book Tribunal");
+            message.setSubject("Registered for shopping");
             StringBuilder str = new StringBuilder();
             str.append("Hi,") ;
             str.append("\n\n") ;
-            str.append("You have been registered on the Book Tribunal!");
+            str.append("You have been registered for shopping!");
             str.append("\n\n");
             str.append("Thanks,") ;
             str.append("\n") ;
-            str.append("Book Tribunal Team") ;
+            str.append("Web shop team") ;
             message.setText(str.toString());
             Transport.send(message);
 

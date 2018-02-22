@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class TaskMessage{
 
+    // Email: email id
     private String emailId;
 
     @JsonCreator

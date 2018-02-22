@@ -10,10 +10,12 @@ public class Receiver {
         CountDownLatch latch = new CountDownLatch(1);
         Mail mail = new Mail();
         String strMessage=new String(message, "UTF-8");
-        System.out.println("THIS IS THE strMESSAGE"+strMessage);
+
+
         byte[] valueDecoded= Base64.decodeBase64(strMessage);
-        System.out.println("Decoded value is " + new String(valueDecoded));
+
         mail.sendEmail(new String(valueDecoded));
+
         latch.countDown();
 
     }
