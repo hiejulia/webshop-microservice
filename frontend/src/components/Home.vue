@@ -1,0 +1,28 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>
+			Web shop
+		</title>
+		<link href="style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div id="background">
+		<h3 class="page-title">Products</h3>
+		<ul class="products">
+			<li class="row products-header">
+				<div class='col-sm-3'>Name</div>
+				<div class='col-sm-3'>Price</div>
+				<div class='col-sm-3'>Description</div>
+				<div class='col-sm-3'>Category</div>
+			</li>
+		</ul>
+		</div>
+	</body>
+
+	<script src="libs/jquery-3.1.0.min.js"></script>
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+	<script src="libs/notify.min.js"></script>
+	<script src="products.js"></script>
+</html>
