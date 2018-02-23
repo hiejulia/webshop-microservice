@@ -1,0 +1,37 @@
+server:
+  port: ${PORT:8091}
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://${DISCOVERY-HOST:localhost}:8761/eureka/
+  instance:
+    preferIpAddress: true
+
+spring:
+  rabbitmq:
+    addresses: ${RABBITMQ-HOST:localhost}:5672
+  datasource:
+    url: jdbc:mysql://${MYSQL-HOST:0.0.0.0}:${MYSQL-PORT:3306}/product-catalog?useSSL=false
+    username: product-catalog
+    password: product-catalog
+    platform: mysql
+    testWhileIdle: true
+    validationQuery: SELECT 1
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+    hibernate:
+      ddl-auto: create-drop
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+
+axon:
+  eventhandling:
+    processors:
+      productCatalog:
+        source: "productCatalogQueue"
+  amqp:
+    exchange: "ProductCatalog"

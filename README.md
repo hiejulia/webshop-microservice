@@ -23,6 +23,10 @@
 + Database : MySQL, PostgreSQL, MongoDB, Cassandra
 + Build tool: Maven, Gradle 
 + Testing: JUnit, Mockito, Hamcrest, 
++ Hystrix dashboard 
+
+
++ Zookeeper
 
 
 ## How to run 
@@ -40,5 +44,13 @@
 * sudo docker ps
 * sudo docker inspect **containerId**
 * sudo docker network inspect bridge
+
+
+
+
+
+### Microservice 
++ User - service
++ Customer - service 
 
 

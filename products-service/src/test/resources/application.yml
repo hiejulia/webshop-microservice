@@ -1,0 +1,15 @@
+server:
+  port: ${PORT:8081}
+
+mongodb:
+  host: localhost
+  port: 27017
+  dbName: productDB
+#
+#spring:
+#  rabbitmq:
+#    addresses: localhost:5672
+#
+#axon:
+#  amqp:
+#    queueName: "ProductCatalog"

@@ -1,0 +1,22 @@
+server:
+  port: ${PORT:8081}
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://${DISCOVERY-HOST:localhost}:8761/eureka/
+  instance:
+    preferIpAddress: true
+
+mongodb:
+  host: ${MONGODB-HOST:127.0.0.1}
+  port: 27017
+  dbName: event-store
+
+spring:
+  rabbitmq:
+    addresses: ${RABBITMQ-HOST:localhost}:5672
+
+axon:
+  amqp:
+    exchange: "ProductCatalog"
