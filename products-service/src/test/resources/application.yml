@@ -13,3 +13,18 @@ mongodb:
 #axon:
 #  amqp:
 #    queueName: "ProductCatalog"
+
+
+
+# Discovery Server Access
+eureka:
+  instance:
+    hostname: product-service
+  client:
+    registryFetchIntervalSeconds: 1
+    serviceUrl:
+      defaultZone: http://discovery-microservice:8001/eureka/
+
+# HTTP (Tomcat) server port
+#server:
+#  port: 9001

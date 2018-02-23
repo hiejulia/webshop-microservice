@@ -2,12 +2,14 @@ package project.webshop.model;
 
 import java.util.UUID;
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection="product")
 public class Product {
     @Id
+//    S
     private String id;
 
     private String productName;
@@ -17,6 +19,9 @@ public class Product {
     private String description;
 
     private String category;
+
+
+
 
 
     public Product(String id, String productName, Double productPrice,

@@ -15,6 +15,26 @@ import project.webshop.model.Product;
 import project.webshop.repository.ProductDetailsRepository;
 
 
+import com.mongodb.async.SingleResultCallback;
+//import com.mongodb.async.client.MongoCollection;
+//import com.mongodb.async.client.MongoDatabase;
+import com.mongodb.client.result.UpdateResult;
+import org.bson.Document;
+import org.bson.types.ObjectId;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Repository;
+
+import javax.annotation.PostConstruct;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.CompletableFuture;
+
+import static com.mongodb.client.model.Filters.eq;
+
+
+
+
 @Service
 public class ProductService {
 
