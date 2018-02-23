@@ -13,9 +13,13 @@ import org.springframework.context.annotation.Bean;
 
 
 @SpringBootApplication
-@EnableZuulProxy
-@EnableDiscoveryClient
-@EnableCircuitBreaker
+//@EnableZuulProxy
+//@EnableDiscoveryClient
+//@EnableCircuitBreaker
+//
+//
+//@EnableEurekaClient
+
 public class ApiGatewayApplication {
 
 	public static void main(String[] args) {

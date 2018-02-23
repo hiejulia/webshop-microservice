@@ -16,6 +16,7 @@ spring:
         git:
           uri: file://${GIT_LOCAL_REPO}
           # uri: https://github.com/venkataravuri/config-repo
+          searchPaths: config/server
 
 
 eureka:
@@ -24,4 +25,4 @@ eureka:
   client:
     registryFetchIntervalSeconds: 1
     serviceUrl:
-      defaultZone: http://discovery-microservice:8001/eureka/      
+      defaultZone: http://discovery-microservice:8001/eureka/
