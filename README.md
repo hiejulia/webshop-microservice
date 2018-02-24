@@ -24,7 +24,7 @@
     + Unit test: rest controller, service, model, validation , 
     + Spring security : OAuth
 + Messaging : RabbitMQ
-
++ Aspect AOP 
 + Database : MySQL, PostgreSQL, MongoDB, Cassandra
 + Build tool: Maven, Gradle 
 + Testing: JUnit, Mockito, Hamcrest
@@ -33,7 +33,6 @@
     + `http://localhost:8080/swagger-ui.html`
 
 + Zookeeper
-
 
 ## How to run 
 + Build 

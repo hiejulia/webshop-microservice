@@ -2,7 +2,8 @@ package project.webshop;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.support.ResourceBundleMessageSource;
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableAuthorizationServer;
@@ -16,6 +17,7 @@ import java.util.Locale;
 @EnableResourceServer
 @EnableAuthorizationServer
 public class WebshopApplication {
+	final static Logger LOGGER = LoggerFactory.getLogger(WebshopApplication.class);
 
 
 	// Config I18N
@@ -39,6 +41,8 @@ public class WebshopApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(WebshopApplication.class, args);
+        LOGGER.info("Start users service");
+
 	}
 
 }

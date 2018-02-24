@@ -12,7 +12,6 @@ import javax.validation.constraints.Size;
 @Document(collection="product")
 public class Product {
     @Id
-//    S
     private String id;
 
     @NotNull
