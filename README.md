@@ -22,6 +22,7 @@
     + i18n
     + Bean Validation API  - Hibernate validator 
     + Unit test: rest controller, service, model, validation , 
+    + Spring security : OAuth
 + Messaging : RabbitMQ
 
 + Database : MySQL, PostgreSQL, MongoDB, Cassandra

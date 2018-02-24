@@ -43,7 +43,7 @@ public class UserSecurityRestTest {
                 + "{id:2,user:Hien}" + "]";
 
         ResponseEntity<String> response = template.exchange(
-                createUrl("/users/Jack/todos"), HttpMethod.GET,
+                ("/users/all"), HttpMethod.GET,
                 new HttpEntity<String>(null, headers),
                 String.class);
         JSONAssert.assertEquals(expected, response.getBody(), false);
