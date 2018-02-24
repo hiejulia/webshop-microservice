@@ -23,6 +23,13 @@
     + Bean Validation API  - Hibernate validator 
     + Unit test: rest controller, service, model, validation , 
     + Spring security : OAuth
+    + Profile 
+    + Devtools 
+    + Live reload 
+    + Spring boot actuator
+    + HAL browser 
+        + `http://localhost:8080/application/` - configprops/env/health/mappings/beans/metrics/trace/dump/heapdump/
+    + Spring data 
 + Messaging : RabbitMQ
 + Aspect AOP 
 + Database : MySQL, PostgreSQL, MongoDB, Cassandra
