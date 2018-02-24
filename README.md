@@ -55,7 +55,10 @@
 
 
 ### Microservice 
-+ User - service
++ Users - service
+    + Spring security is enabled 
+    + Postman: Authorization : type: Basic Auth - Username: user - Password : password 
+
 + Customer - service 
 
 
