@@ -36,6 +36,22 @@
 
 
 ## How to run 
++ Build 
+    + Build with Gradle : `gradle bootRepackage`
+    + Build with Maven : `mvn clean package`
+
++ Run 
+    + 
+
+
++ Test 
+
+
+
+
+
+
+
 * sudo apt-get install docker.io
 * sudo mvn -e package docker:build
 * sudo docker run --name dbCustomer -d cassandra:2.2.5
