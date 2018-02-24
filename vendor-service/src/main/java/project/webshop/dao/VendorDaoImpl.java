@@ -27,7 +27,7 @@ public class VendorDaoImpl  implements IVendorDao {
     public List<Vendor> getCustomerDetailsbyUserId(String username) {
 
         CriteriaBuilder criteriaBuilder = entityManager.getCriteriaBuilder();
-        CriteriaQuery<Customer> criteriaQuery =criteriaBuilder.createQuery(Customer.class);
+        CriteriaQuery<> criteriaQuery =criteriaBuilder.createQuery(Customer.class);
         Root<Customer> user = criteriaQuery.from(Customer.class);
         TypedQuery<Customer> typedQuery =null;
 
