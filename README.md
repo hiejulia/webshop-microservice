@@ -18,6 +18,8 @@
     + RESTtemplate
     + Feign client 
     + JPA 
+    + Caching
+    + i18n
 + Messaging : RabbitMQ
 
 + Database : MySQL, PostgreSQL, MongoDB, Cassandra
