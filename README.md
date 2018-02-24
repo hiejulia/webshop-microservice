@@ -30,6 +30,7 @@
     + HAL browser 
         + `http://localhost:8080/application/` - configprops/env/health/mappings/beans/metrics/trace/dump/heapdump/
     + Spring data 
+    + Spring cloud 
 + Messaging : RabbitMQ
 + Aspect AOP 
 + Database : MySQL, PostgreSQL, MongoDB, Cassandra
