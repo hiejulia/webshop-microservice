@@ -1,5 +1,6 @@
 package project.webshop.controller;
 
+import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -40,6 +41,12 @@ public class ProductController {
 
     // get all products
     @RequestMapping(value = "/all", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    @ApiOperation(
+            value = "Retrieve all products in the warehouse",
+            notes = "A list of products",
+            response = Product.class,
+            responseContainer = "List",
+            produces = "application/json")
     public ArrayList<Product> listAllProducts() throws JSONException   {
         return productService.listAll();
     }

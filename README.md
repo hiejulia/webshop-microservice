@@ -18,7 +18,7 @@
     + RESTtemplate
     + Feign client 
     + JPA 
-    + Caching
+    + Caching: Spring caching 
     + i18n
     + Bean Validation API  - Hibernate validator 
     + Unit test: rest controller, service, model, validation , 
@@ -28,7 +28,8 @@
 + Build tool: Maven, Gradle 
 + Testing: JUnit, Mockito, Hamcrest
 + Hystrix dashboard 
-+ API documentation : Swagger 
++ API documentation : Swagger , SwaggerUI 
+    + `http://localhost:8080/swagger-ui.html`
 
 + Zookeeper
 
