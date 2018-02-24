@@ -10,15 +10,18 @@ import java.util.UUID;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.hateoas.mvc.ControllerLinkBuilder;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import project.webshop.exception.EntityNotFoundException;
 import project.webshop.model.Product;
 import project.webshop.repository.ProductDetailsRepository;
 import project.webshop.service.ProductService;
 
 import javax.servlet.http.HttpServletResponse;
+import javax.validation.Valid;
 
 
 @RestController
@@ -41,14 +44,22 @@ public class ProductController {
         return productService.listAll();
     }
 
-    @RequestMapping(value = "/{productId}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+//    @RequestMapping(value = "/{productId}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(value = "/{productId}", produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseStatus(HttpStatus.OK)
-    public ResponseEntity<Product> getProductInfo(@PathVariable("productId") String productId) {
+    public ResponseEntity<Product> getProductInfo(@Valid @PathVariable("productId") String productId) {
         Product returnedProduct = new Product();
         returnedProduct = productService.getProductInfo(productId);
+        if(returnedProduct == null){
+//            throw new ResponseEntity<?>(EntityNotFoundException("Product not found"),HttpStatus.BAD_REQUEST);
+
+        }
+
         return new ResponseEntity<Product>(returnedProduct,HttpStatus.OK);
 
     }
+
+
 
     @RequestMapping(value = "/add", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
     @ResponseStatus(HttpStatus.OK)

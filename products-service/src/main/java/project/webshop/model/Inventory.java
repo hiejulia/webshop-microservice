@@ -4,6 +4,8 @@ import java.util.UUID;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import javax.validation.constraints.NotNull;
+
 @Document(collection="Inventory")
 public class Inventory {
     // productId
@@ -12,6 +14,7 @@ public class Inventory {
     @Id
     private String productId;
 
+    @NotNull
     private Integer availableStock;
 
     public String getProductId() {

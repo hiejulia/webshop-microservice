@@ -20,11 +20,13 @@
     + JPA 
     + Caching
     + i18n
+    + Bean Validation API  - Hibernate validator 
+    + Unit test: rest controller, service, model, validation , 
 + Messaging : RabbitMQ
 
 + Database : MySQL, PostgreSQL, MongoDB, Cassandra
 + Build tool: Maven, Gradle 
-+ Testing: JUnit, Mockito, Hamcrest, 
++ Testing: JUnit, Mockito, Hamcrest
 + Hystrix dashboard 
 
 

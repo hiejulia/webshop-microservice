@@ -6,12 +6,17 @@ import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
 @Document(collection="product")
 public class Product {
     @Id
 //    S
     private String id;
 
+    @NotNull
+    @Size(min = 3, message = "Enter at least 3 character")
     private String productName;
 
     private Double productPrice;
