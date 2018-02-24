@@ -1,12 +1,15 @@
 package project.webshop.model;
 
 import java.util.UUID;
+
+import com.fasterxml.jackson.annotation.JsonRootName;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import javax.validation.constraints.NotNull;
 
 @Document(collection="Inventory")
+@JsonRootName("Inventory")
 public class Inventory {
     // productId
     // available number of stock
