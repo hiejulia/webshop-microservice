@@ -1,3 +1,4 @@
+# Http server port
 server:
   port: 8888
 
@@ -14,8 +15,8 @@ spring:
         native:
           searchLocations: file://${LOCAL_REPO}
         git:
-          uri: file://${GIT_LOCAL_REPO}
-          # uri: https://github.com/venkataravuri/config-repo
+#          uri: file://${GIT_LOCAL_REPO}
+           uri: https://github.com/HienNguyen711/webshop-microservice/config-repo
           searchPaths: config/server
 
 

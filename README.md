@@ -8,6 +8,10 @@
 ## Tech stack 
 + Eureka server 
 + Spring cloud config server
++ Spring boot
++ Spring cloud 
++ Load balancer - Edge server - Reverse proxy - Routing 
++ Monitoring Dashboard 
 + Circuit breaker Hystrix 
 + Client-side load balancing: Ribbon 
 + Dynamic scaling: Eureka naming server 
@@ -31,6 +35,8 @@
         + `http://localhost:8080/application/` - configprops/env/health/mappings/beans/metrics/trace/dump/heapdump/
     + Spring data 
     + Spring cloud 
+    + API versioning
+    + Spring OAuth 
 + Messaging : RabbitMQ
 + Aspect AOP 
 + Database : MySQL, PostgreSQL, MongoDB, Cassandra
@@ -48,7 +54,7 @@
 + API gateway with Zuul 
 + Distributed tracing: Spring cloud sleuth and zipkin
 + Hystrix 
-
++ Container : Docker  
 
 ## How to run 
 + Build 
