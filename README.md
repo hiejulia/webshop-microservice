@@ -95,7 +95,7 @@
 + Customer - service 
     + Database : Cassandra
 + Cart - service 
-    + Database : 
+    + Database : PostgreSQL
 + Checkout - service 
     + Database : 
 + Customer - service 
@@ -105,7 +105,6 @@
     + Messaging broker : RabbitMQ
 + Order - service 
     + Database : MongoDB
-
 + Product - inventory service 
     + Database : MongoDB
 + Products - services
@@ -118,6 +117,9 @@
     + Database : PostgreSQL 
 + Vendor - service 
     + Database : embedded H2 database 
+
++ Address - service 
+    + Database : PostgreSQL
 
 
 
