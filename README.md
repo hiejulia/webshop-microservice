@@ -90,8 +90,34 @@
 + Users - service
     + Spring security is enabled 
     + Postman: Authorization : type: Basic Auth - Username: user - Password : password 
+    + Database : PostgreSQL 
 
 + Customer - service 
+    + Database : Cassandra
++ Cart - service 
+    + Database : 
++ Checkout - service 
+    + Database : 
++ Customer - service 
+    + Database : 
++ Email - service
+    + Database : 
+    + Messaging broker : RabbitMQ
++ Order - service 
+    + Database : MongoDB
+
++ Product - inventory service 
+    + Database : MongoDB
++ Products - services
+    + Database : MongoDB
++ Recommendation - service 
+    + Database : 
++ Review - service 
+    + Database : MySQL
++ Users - service
+    + Database : 
++ Vendor - service 
+    + Database : embedded H2 database 
 
 
 

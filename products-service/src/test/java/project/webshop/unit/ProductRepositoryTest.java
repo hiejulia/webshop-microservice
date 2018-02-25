@@ -17,7 +17,7 @@ public class ProductRepositoryTest {
 
     @Test
     public void simpleTest(){
-        
+
         // delete all
         // save new product
         productDetailsRepository.deleteAll();
