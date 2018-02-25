@@ -1,0 +1,23 @@
+server:
+  port: 8086
+
+
+
+spring:
+  application:
+    name: users-service
+  jpa:
+    database: POSTGRESQL
+    hibernate:
+      ddl-auto: update
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/users
+    username: root
+    password: password
+    driverClassName: org.postgresql.Driver
+
+
+eureka:
+  instance:
+    preferIpAddress: true

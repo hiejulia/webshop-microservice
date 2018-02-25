@@ -4,6 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.support.ResourceBundleMessageSource;
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableAuthorizationServer;
@@ -15,6 +16,7 @@ import java.util.Locale;
 
 @SpringBootApplication
 @EnableResourceServer
+@EnableEurekaClient
 @EnableAuthorizationServer
 public class WebshopApplication {
 	final static Logger LOGGER = LoggerFactory.getLogger(WebshopApplication.class);

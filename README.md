@@ -115,7 +115,7 @@
 + Review - service 
     + Database : MySQL
 + Users - service
-    + Database : 
+    + Database : PostgreSQL 
 + Vendor - service 
     + Database : embedded H2 database 
 
