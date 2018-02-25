@@ -3,6 +3,7 @@ server:
 eureka:
   instance:
     hostname: localhost
+    leaseRenewalIntervalInSeconds: 3
   client: # not a client , do not register with yourself
     registerWithEureka: false
     fetchRegistry: false
@@ -10,7 +11,8 @@ eureka:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 
 
-
+spring.application.name: eureka-server
+spring.profiles.default: dev
 # eureka:
 #   instance:
 #    hostname: discovery-microservice
