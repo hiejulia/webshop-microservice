@@ -40,7 +40,15 @@
 + API documentation : Swagger , SwaggerUI 
     + `http://localhost:8080/swagger-ui.html`
 
-+ Zookeeper
++ Spring cloud config server 
++ Spring cloud bus 
++ Feign client
++ Client-side load balancing with Ribbon 
++ Name server with Eureka 
++ API gateway with Zuul 
++ Distributed tracing: Spring cloud sleuth and zipkin
++ Hystrix 
+
 
 ## How to run 
 + Build 
@@ -84,5 +92,19 @@
     + Postman: Authorization : type: Basic Auth - Username: user - Password : password 
 
 + Customer - service 
+
+
+
+
+
+
+
+### Port 
++ Config server(Spring cloud config): 8888 
++ Eureka server : 8761
++ Zuul API gateway server : 8765
++ Zipkin distributed tracing server : 9411
+
+
 
 
