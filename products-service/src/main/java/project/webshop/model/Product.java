@@ -16,6 +16,7 @@ public class Product {
 
     @NotNull
     @Size(min = 3, message = "Enter at least 3 character")
+//    @Column(nullable = false)
     private String productName;
 
     private Double productPrice;

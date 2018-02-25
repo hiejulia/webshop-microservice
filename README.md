@@ -38,6 +38,7 @@
     + API versioning
     + Spring OAuth 
 + Messaging : RabbitMQ
++ Redis 
 + Aspect AOP 
 + Database : MySQL, PostgreSQL, MongoDB, Cassandra
 + Build tool: Maven, Gradle 
@@ -57,6 +58,10 @@
 + Container : Docker  
 
 ## How to run 
++ Before run 
+    + Install and run ElasticSearch and Redis
+
+
 + Build 
     + Build with Gradle : `gradle bootRepackage`
     + Build with Maven : `mvn clean package`
@@ -87,6 +92,17 @@
 * sudo docker ps
 * sudo docker inspect **containerId**
 * sudo docker network inspect bridge
+
+
+
+
+
+
+
+// ---------
++ Run the project in Docker-Swarm 
+    + Push the docker images to docker hub repo 
+    + User images for creation of docker swarm 
 
 
 
