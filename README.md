@@ -170,8 +170,9 @@
 + Integration test
     + Multi layer 
     + Use embedded database for integration test 
-+ Session management
-+ Caching 
++ Session management: Spring session , scale the application, HttpSession, external session store
+    + Connect Spring session to use Redis store , data would store to Redis instead of Http session 
++ Caching : using Spring cache
 + logging
 
 
