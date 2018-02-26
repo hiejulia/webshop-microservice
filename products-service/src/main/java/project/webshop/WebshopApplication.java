@@ -6,6 +6,7 @@ import org.springframework.cache.annotation.EnableCaching;
 
 @SpringBootApplication
 //@EnableDiscoveryClient
+//@EnableReactiveMongoRepositories : for reactive programmming
 @EnableCaching
 public class WebshopApplication {
 
