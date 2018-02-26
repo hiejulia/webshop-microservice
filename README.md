@@ -159,3 +159,21 @@
 
 
 
+
+### Spring best practice 
++ Structure of enterprise application : layer of structure: presentation ,service, business, persistence, 
++ Spring config: xml files config, @ annotation, 
++ Manage dependency version : maven pom or gradle 
++ Exception handle
++ Unit test
+    + Test data layer, business layer
++ Integration test
+    + Multi layer 
+    + Use embedded database for integration test 
++ Session management
++ Caching 
++ logging
+
+
+
+
